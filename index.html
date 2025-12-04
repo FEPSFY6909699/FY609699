@@ -332,9 +332,12 @@ p.ex1 {
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AnalysisCount1 = displayWordCount("DiscussionAndAnalysis1/3_InText");
+	const AnalysisCount2 = displayWordCount("DiscussionAndAnalysis2/3_InText");
+	const AnalysisCount3 = displayWordCount("DiscussionAndAnalysis3/3_InText");
+	const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount1 + AnalysisCount2 + AnalysisCount3 + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
